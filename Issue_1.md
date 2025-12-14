@@ -1,3 +1,10 @@
+---
+layout: default
+title: AI Industry Insights – Issue 1
+permalink: /issue-1/
+---
+
+
 # AI Industry Insights – Issue 1
 **Graduate Residency Series | December 2025**
 
