@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Industry Insights</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1220;
+      --panel: #0f172a;
+      --panel-light: #f8fafc;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --border: #1f2937;
+      --accent: linear-gradient(135deg, #22c55e, #0ea5e9);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+      background: radial-gradient(120% 120% at 20% 20%, rgba(14,165,233,0.08), transparent 45%),
+                  radial-gradient(120% 120% at 80% 10%, rgba(34,197,94,0.08), transparent 40%),
+                  #0b1120;
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 18px 48px;
+    }
+    .page { max-width: 960px; margin: 0 auto; }
+    a { color: inherit; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+    .logo { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; color: #0f172a; font-weight: 800; padding: 6px 10px; border-radius: 14px; background: #f8fafc; box-shadow: 0 8px 24px rgba(0,0,0,0.25); transition: transform 120ms ease, box-shadow 120ms ease; }
+    .logo:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,0.28); }
+    .logo-mark { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: var(--accent); color: #0b1120; font-weight: 900; font-size: 16px; letter-spacing: 0.04em; }
+    .hero {
+      padding: 24px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: #f9fafb;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .chips { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 14px; }
+    .chip { padding: 8px 12px; border-radius: 999px; font-weight: 700; }
+    .chip.green { background: #22c55e; color: #064e3b; }
+    .chip.blue { background: #0ea5e9; color: #0b1f30; }
+    .chip.orange { background: #f97316; color: #451a03; }
+    h1 { margin: 0 0 12px; font-size: 32px; letter-spacing: -0.01em; }
+    h2 { margin: 28px 0 12px; letter-spacing: -0.01em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 16px 0 8px; }
+    .card-link { text-decoration: none; color: inherit; }
+    .card {
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      background: #0f172a;
+      color: #e2e8f0;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+    .card.light { background: #f8fafc; color: #0f172a; border: 1px solid #e2e8f0; box-shadow: none; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 25px rgba(0,0,0,0.35); border-color: #22c55e; }
+    .card.light:hover { box-shadow: 0 10px 22px rgba(15,23,42,0.15); border-color: #0ea5e9; }
+    ul { margin: 0; padding-left: 18px; }
+    .panel { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #f9fafb; color: #0f172a; }
+    .panel.dark { background: #0b1120; color: #e2e8f0; border: 1px solid #1e293b; }
+    .author { display: flex; align-items: center; gap: 12px; padding: 12px 14px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #22d3ee, #6366f1); display: grid; place-items: center; font-weight: 800; color: #0b1120; }
+    .muted { color: var(--muted); }
+    .img-frame { border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.35); margin: 12px 0; }
+    img { width: 100%; display: block; }
+    @media (prefers-color-scheme: light) {
+      body { background: #f3f4f6; color: #0f172a; }
+      .hero { background: linear-gradient(135deg, #0f172a, #111827); color: #f9fafb; }
+      .card { background: #0f172a; color: #e2e8f0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="logo" href="./index.html" aria-label="AI Industry Insights home">
+        <span class="logo-mark">AI</span>
+        <span style="font-size: 18px; color: #0f172a;">Industry Insights</span>
+      </a>
+    </header>
+
+    <section class="hero">
+      <p class="muted" style="letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; margin: 0 0 8px;">Premium newsletter</p>
+      <h1>Real-world analysis of how AI is reshaping industries</h1>
+      <p style="margin: 0 0 18px; max-width: 720px;">Each issue delivers concise briefings on emerging AI technologies, the companies turning them into products, and the measurable ROI leaders are seeing today.</p>
+      <div class="chips">
+        <span class="chip green">Actionable insights</span>
+        <span class="chip blue">Operator-first</span>
+        <span class="chip orange">Built for decision-makers</span>
+      </div>
+    </section>
+
+    <h2>Latest Issue</h2>
+    <div class="grid">
+      <a class="card-link" href="./issue_1.html">
+        <div class="card" aria-label="Issue 1 details">
+          <p class="muted" style="margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Issue 1</p>
+          <h3 style="margin: 0 0 8px;">December 2025</h3>
+          <ul>
+            <li><strong>Pharmaceuticals</strong>: AI-driven drug discovery</li>
+            <li><strong>Semiconductors</strong>: Generative AI for chip design</li>
+            <li><strong>Financial Services</strong>: Decision-grade generative AI</li>
+          </ul>
+        </div>
+      </a>
+      <a class="card-link" href="./issue_1.html">
+        <div class="card light" aria-label="What’s inside Issue 1">
+          <h3 style="margin: 0 0 8px;">What’s inside</h3>
+          <ul>
+            <li>Market snapshots with revenue impact signals</li>
+            <li>Competitive positioning and vendor watchlists</li>
+            <li>Practical adoption playbooks for operators</li>
+          </ul>
+        </div>
+      </a>
+    </div>
+
+    <div class="img-frame">
+      <img src="ai_industry_impact_chart.png" alt="AI Industry impact chart" />
+    </div>
+
+    <h2>About This Newsletter</h2>
+    <div class="panel">
+      <p style="margin-top: 0;">This series is produced as part of an academic residency and continued as an independent professional publication. Each issue focuses on emerging AI companies, evolving products, and measurable business impact.</p>
+      <p style="margin-bottom: 0;">Expect concise, operator-focused guidance, examples of deployments in production, and signals on where the market is heading.</p>
+    </div>
+
+    <h2>Author</h2>
+    <div class="panel dark author">
+      <div class="avatar">TQ</div>
+      <div>
+        <p style="margin: 0; font-weight: 700;">Timothy Quainoo</p>
+        <p class="muted" style="margin: 4px 0 0;">AI strategist and builder of decision-grade products</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

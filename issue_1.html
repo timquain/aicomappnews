@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Industry Insights — Issue 1</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.65;
+      padding: 32px 18px 48px;
+    }
+    .page { max-width: 860px; margin: 0 auto; }
+    a { color: #38bdf8; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+    .logo { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; color: #0f172a; font-weight: 800; padding: 6px 10px; border-radius: 14px; background: #f8fafc; box-shadow: 0 8px 24px rgba(0,0,0,0.25); transition: transform 120ms ease, box-shadow 120ms ease; }
+    .logo:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,0.28); }
+    .logo-mark { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, #22c55e, #0ea5e9); color: #0b1120; font-weight: 900; font-size: 15px; letter-spacing: 0.04em; }
+    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: -0.01em; }
+    h2 { margin: 24px 0 12px; letter-spacing: -0.01em; }
+    .lede { margin: 0 0 16px; color: #cbd5e1; }
+    .divider { margin: 26px 0; border: none; border-top: 1px solid rgba(255,255,255,0.08); }
+    .section { padding: 18px; border-radius: 14px; background: #0f172a; border: 1px solid #1f2937; box-shadow: 0 14px 36px rgba(0,0,0,0.28); }
+    .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); }
+    .quick-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 12px; }
+    .quick-links a { padding: 6px 10px; border-radius: 10px; background: rgba(148,163,184,0.12); color: #e2e8f0; text-decoration: none; font-size: 13px; border: 1px solid rgba(148,163,184,0.35); transition: background 0.15s ease, border-color 0.15s ease; }
+    .quick-links a:hover { background: rgba(56,189,248,0.14); border-color: rgba(56,189,248,0.55); }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    .footer { margin-top: 32px; padding: 16px; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; background: rgba(255,255,255,0.03); }
+    sup { font-size: 12px; }
+    @media (prefers-color-scheme: light) {
+      body { background: #f3f4f6; color: #0f172a; }
+      .section { background: #ffffff; border-color: #e5e7eb; box-shadow: 0 8px 18px rgba(15,23,42,0.1); }
+      .divider { border-top-color: #e5e7eb; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="logo" href="./index.html" aria-label="Back to homepage">
+        <span class="logo-mark">AI</span>
+        <span style="font-size: 18px; color: #0f172a;">Industry Insights</span>
+      </a>
+      <span class="pill">Issue 1 · December 2025</span>
+    </header>
+
+    <h1>AI Industry Insights – Issue 1</h1>
+    <p class="lede">Graduate Residency Series | December 2025</p>
+    <div class="quick-links" aria-label="Quick navigation">
+      <a href="#industries">Skip to Industries</a>
+      <a href="#references">Jump to References</a>
+    </div>
+    <hr class="divider" />
+
+    <div class="section" id="purpose">
+      <h2>Purpose &amp; Approach</h2>
+      <p>This newsletter synthesizes recent commercial developments in artificial intelligence across selected industries. Companies and applications are chosen based on recent product evolution, emerging adoption, and demonstrated impact on business decision-making.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section" id="introduction">
+      <h2>Introduction</h2>
+      <p>Artificial intelligence is no longer experimental or futuristic. Across industries, AI systems are actively shaping how organizations make decisions, allocate resources, and manage risk. This issue highlights how emerging AI companies and evolving products are transforming real business workflows today.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section" id="industries">
+      <h2>Industries in Focus</h2>
+      <ul>
+        <li><strong>Pharmaceuticals</strong> – Accelerating drug discovery and reducing R&amp;D uncertainty</li>
+        <li><strong>Semiconductors</strong> – Optimizing chip design and shortening time-to-market</li>
+        <li><strong>Financial Services</strong> – Enabling faster, evidence-based analysis and decisions</li>
+      </ul>
+    </div>
+
+    <hr class="divider" />
+    <div class="section" id="pharma">
+      <h2>Pharmaceuticals: AI Is Speeding Up Drug Discovery</h2>
+      <p><strong>Featured Company:</strong> Insilico Medicine<br />
+         <strong>Commercial AI Products:</strong> Chemistry42, PandaOmics</p>
+      <p>Insilico Medicine is an AI-first biotechnology company using generative models to design drug molecules and identify promising disease targets. Recent advances show AI-designed compounds progressing toward clinical validation, signaling a shift from experimental AI to commercially viable pipelines. Their <a href="https://insilico.com/pipeline" target="_blank" rel="noopener">AI-powered pipeline</a><sup><a href="#ref-insilico-pipeline">1</a></sup> and published work on <a href="https://doi.org/10.1038/s41587-019-0224-x" target="_blank" rel="noopener">DDR1 kinase inhibitors</a><sup><a href="#ref-ddr1">2</a></sup> illustrate the speed and quality of AI-generated candidates, while <a href="https://insilico.com/news" target="_blank" rel="noopener">recent clinical announcements</a><sup><a href="#ref-insilico-news">3</a></sup> point to commercialization.</p>
+      <h3>Business Impact</h3>
+      <ul>
+        <li>Faster discovery timelines</li>
+        <li>Earlier go/no-go decisions</li>
+        <li>Reduced late-stage failure risk</li>
+      </ul>
+      <h3>Future Potential</h3>
+      <p>AI-driven discovery platforms may redefine pharmaceutical R&amp;D economics by reducing cost and uncertainty.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section" id="semiconductors">
+      <h2>Semiconductors: AI Is Transforming Chip Design</h2>
+      <p><strong>Featured Company:</strong> Synopsys<br />
+         <strong>Commercial AI Evolution:</strong> Generative AI in EDA tools</p>
+      <p>Synopsys has expanded generative AI within its design software, allowing AI to propose optimized chip layouts used in commercial production. The company’s <a href="https://www.synopsys.com/solutions/artificial-intelligence.html" target="_blank" rel="noopener">AI in EDA portfolio</a><sup><a href="#ref-synopsys-ai">4</a></sup> and <a href="https://www.synopsys.com/implementation-and-signoff/ai-driven-design.html" target="_blank" rel="noopener">DSO.ai platform</a><sup><a href="#ref-dsoai">5</a></sup> show measurable productivity gains, reinforced by industry research on <a href="https://doi.org/10.1109/MDAT.2020.2987377" target="_blank" rel="noopener">machine learning in physical design</a><sup><a href="#ref-ml-physical-design">6</a></sup>.</p>
+      <h3>Business Impact</h3>
+      <ul>
+        <li>Shorter design cycles</li>
+        <li>Improved performance and power efficiency</li>
+        <li>Lower development costs</li>
+      </ul>
+      <h3>Future Potential</h3>
+      <p>AI-assisted design is becoming essential as chip complexity increases.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section" id="finance">
+      <h2>Financial Services: AI Accelerates High-Stakes Decisions</h2>
+      <p><strong>Featured Company:</strong> Hebbia<br />
+         <strong>Commercial AI Product:</strong> Generative AI for financial research</p>
+      <p>Hebbia enables analysts to query thousands of financial documents with traceable outputs suitable for regulated environments. Their positioning around <a href="https://www.hebbia.ai" target="_blank" rel="noopener">decision-grade AI</a><sup><a href="#ref-hebbia-home">7</a></sup> and <a href="https://www.hebbia.ai/use-cases" target="_blank" rel="noopener">financial research use cases</a><sup><a href="#ref-hebbia-use-cases">8</a></sup> aligns with industry coverage on how AI is transforming diligence workflows, including <a href="https://www.forbes.com/sites/bernardmarr/2023/10/09/how-ai-is-transforming-financial-research-and-due-diligence/" target="_blank" rel="noopener">recent reporting</a><sup><a href="#ref-forbes">9</a></sup>.</p>
+      <h3>Business Impact</h3>
+      <ul>
+        <li>Faster due diligence</li>
+        <li>Reduced manual review</li>
+        <li>Increased decision confidence</li>
+      </ul>
+      <h3>Future Potential</h3>
+      <p>Decision-grade generative AI may become standard across finance and risk teams.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section">
+      <h2>Cross-Industry Insight</h2>
+      <p>Across all three industries, AI is embedded directly into core workflows, accelerating decisions while reducing uncertainty and operational risk.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section">
+      <h2>Closing Thought</h2>
+      <p>The most effective AI systems today do not replace professionals; they enhance judgment and enable faster, more confident decisions.</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="section" id="references">
+      <h2>References</h2>
+      <ul>
+        <li id="ref-insilico-pipeline">1. Insilico Medicine. (2023). Artificial intelligence–powered drug discovery pipeline. <a href="https://insilico.com/pipeline" target="_blank" rel="noopener">insilico.com/pipeline</a></li>
+        <li id="ref-ddr1">2. Zhavoronkov, A., Ivanenkov, Y. A., Aliper, A., et al. (2019). Deep learning enables rapid identification of potent DDR1 kinase inhibitors. <em>Nature Biotechnology</em>, 37(9), 1038–1040. <a href="https://doi.org/10.1038/s41587-019-0224-x" target="_blank" rel="noopener">doi.org/10.1038/s41587-019-0224-x</a></li>
+        <li id="ref-insilico-news">3. Insilico Medicine. (2022). From AI-designed molecules to clinical candidates. <a href="https://insilico.com/news" target="_blank" rel="noopener">insilico.com/news</a></li>
+        <li id="ref-synopsys-ai">4. Synopsys. (2023). Artificial intelligence in electronic design automation. <a href="https://www.synopsys.com/solutions/artificial-intelligence.html" target="_blank" rel="noopener">synopsys.com/solutions/artificial-intelligence.html</a></li>
+        <li id="ref-dsoai">5. Synopsys. (2022). DSO.ai: Autonomous chip design optimization. <a href="https://www.synopsys.com/implementation-and-signoff/ai-driven-design.html" target="_blank" rel="noopener">synopsys.com/implementation-and-signoff/ai-driven-design.html</a></li>
+        <li id="ref-ml-physical-design">6. Kahng, A. B., Kim, J., &amp; Kang, M. (2020). Machine learning applications in physical design. <em>IEEE Design &amp; Test</em>, 37(3), 8–20. <a href="https://doi.org/10.1109/MDAT.2020.2987377" target="_blank" rel="noopener">doi.org/10.1109/MDAT.2020.2987377</a></li>
+        <li id="ref-hebbia-home">7. Hebbia. (2024). Decision-grade AI for enterprise knowledge work. <a href="https://www.hebbia.ai" target="_blank" rel="noopener">hebbia.ai</a></li>
+        <li id="ref-hebbia-use-cases">8. Hebbia. (2023). AI for financial research, due diligence, and compliance. <a href="https://www.hebbia.ai/use-cases" target="_blank" rel="noopener">hebbia.ai/use-cases</a></li>
+        <li id="ref-forbes">9. Marr, B. (2023). How AI is transforming financial research and due diligence. <em>Forbes</em>. <a href="https://www.forbes.com/sites/bernardmarr/2023/10/09/how-ai-is-transforming-financial-research-and-due-diligence/" target="_blank" rel="noopener">forbes.com</a></li>
+      </ul>
+    </div>
+
+    <hr class="divider" />
+    <div class="section">
+      <h2>AI Use Disclosure</h2>
+      <p>Generative AI tools were used to assist with drafting and structuring this newsletter. All analysis and conclusions reflect the author’s independent review and judgment.</p>
+    </div>
+
+    <div class="footer">
+      <p style="margin: 0 0 6px;">Thanks for reading Issue 1 of AI Industry Insights.</p>
+      <a href="./index.html">Back to homepage</a>
+    </div>
+  </div>
+</body>
+</html>
