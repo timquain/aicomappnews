@@ -1,3 +1,8 @@
+---
+layout: default
+title: AI Industry Insights – Issue 1
+---
+
 # 🚀 AI at Work: How Emerging Technologies Are Reshaping Business Decisions Today
 
 **AI is no longer a future promise. It is actively reshaping how companies make decisions, allocate capital, and compete.**  
